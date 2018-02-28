@@ -1,0 +1,36 @@
+.header {
+
+  &__image {
+    max-width: 50%;
+    width: 50%;
+    height: 600px;
+
+    &--container {
+      width: 100%;
+      background: $pete_yellow;
+      display: flex;
+    }
+
+    &--right {
+      background-image: url('../../dist/img/organ1.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--left {
+      background-image: url('../../dist/img/headphone.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__cover {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+  }
+}
+

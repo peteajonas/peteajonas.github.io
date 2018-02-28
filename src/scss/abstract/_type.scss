@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'grotesk';
+    src: url('../../dist/type/HKGrotesk-Bold.woff2');
+    font-weight: 900;
+}
+
+h1 {
+  font-family: 'grotesk';
+  font-weight: 900;
+  font-size: 50px;
+  color: $white;
+}
+
+h2 {
+  font-family: 'grotesk';
+  font-weight: 900;
+  font-size: 50px;
+  color: $black;
+}

@@ -1,0 +1,20 @@
+.footer {
+  background: $pete_yellow;
+  display: flex;
+
+  &--right {
+    width: 45%;
+  }
+
+  &--left {
+    width: 55%;
+  }
+
+  &--image {
+    height: 400px;
+    background-image: url('../../dist/img/organ1.jpeg');
+    max-width: 70%;
+    width: 70%;
+    margin: 50px auto;
+  }
+}

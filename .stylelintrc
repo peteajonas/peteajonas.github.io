@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "plugin/selector-bem-pattern": {
+      "componentName": "(([a-z0-9]+(?!-$)-?)+)",
+      "componentSelectors": {
+        "initial": "\\.{componentName}(((__|--)(([a-z0-9\\[\\]'=]+(?!-$)-?)+))+)?$"
+      },
+      "ignoreSelectors": [
+        ".*\\.no-js.*",
+        ".*\\.js-.*",
+        ".*\\.lt-ie.*"
+      ]
+    },
+    "color-no-hex": true,
+		"font-family-name-quotes": "always-unless-keyword",
+		"font-family-no-duplicate-names": true,
+		"font-weight-notation": "numeric",
+		"number-leading-zero": "never",
+		"number-max-precision": 2,
+		"number-no-trailing-zeros": true,
+    "string-no-newline": true,
+    "string-quotes": "single",
+    "length-zero-no-unit": true,
+  }
+}

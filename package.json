@@ -1,0 +1,38 @@
+{
+  "name": "petajonas.github.io",
+  "version": "1.0.0",
+  "description": "This is a github pages website",
+  "main": "index.js",
+  "scripts": {
+    "build:scss": "node-sass --output-style compressed src/scss/main.scss | postcss -u autoprefixer --output dist/css/main.css; echo ✅ CSS",
+    "prebuild:scss": "stylelint src/scss/**/*.scss;",
+    "build:js": "uglifyjs --mangle --source-map-inline --output dist/js/main.js src/js/*.js;",
+    "prebuild:js": "eslint src/js/; echo linted\n",
+    "watch:scss": "watch --interval=.001 'npm run build:scss' src/scss/",
+    "watch:js": "watch --interval=.001 'npm run build:js' src/js/",
+    "start": "npm-run-all --silent --parallel watch:**",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peteajonas/petajonas.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "eslint": "^3.19.0",
+    "modern-normalize": "^0.4.0",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^3.1.1",
+    "stylelint": "^7.10.1",
+    "stylelint-selector-bem-pattern": "^1.0.0",
+    "uglify-js": "^2.8.21",
+    "watch": "^1.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/peteajonas/petajonas.github.io/issues"
+  },
+  "homepage": "https://github.com/peteajonas/petajonas.github.io#readme"
+}
