@@ -1,24 +1,86 @@
 <head>
   <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="dist/js/main.js" async></script>
 </head>
 <body>
   <header class='header'>
     <div class='header__image--container'>
-      <div class='header__image header__image--left'></div>
-      <div class='header__image header__image--right'></div>
+      <div class='header__image'>
+        <div class='header__image__stack header__image__stack--l1'></div>
+        <div class='header__image__stack header__image__stack--l2'></div>
+      </div>
+      <div class='header__image'>
+        <div class='header__image__stack header__image__stack--r1'></div>
+        <div class='header__image__stack header__image__stack--r2'></div>
+      </div>
     </div>
     <div class='header__cover'>
-      <h1>Pete Jonas</h1>
-      <ul>
-        <li>Organist</li>
-        <li>Guitarist</li>
-        <li>Composer</li>
-      </ul>
+      <div class='header__cover--text'>
+        <h1>Pete Jonas</h1>
+        <ul>
+          <li>Organist</li>
+          <li>Guitarist</li>
+          <li>Composer</li>
+        </ul>
+      </div>
     </div>
   </header>
   <main class='body'>
-    <h2>Music</h2>
-    <h2>Videos</h2>
+    <div class='music'>
+      <h2>Music</h2>
+      <ul class='music__list'>
+        <li class='music__card' data-music='jonas_warren'>
+          <img src='dist/img/jonas_warren.png'>
+          <h4>This Town Ain't Big Enough for the Both of Us</h4>
+        </li>
+        <li class='music__card' data-music='vampires'>
+          <img src='dist/img/vampires.png'>
+          <h4>Damn These Vampires</h4>
+        </li>
+        <li class='music__card' data-music='waltz'>
+          <img src='dist/img/waltz.png'>
+          <h4>Fake Waltz</h4>
+        </li>
+      </ul>
+      <div class='music__player'>
+      </div>
+    </div>
+    <div class='videos'>
+      <h2>Videos</h2>
+      <ul class='videos__list'>
+        <li class='videos__item'>
+          <div class='videos__item--left'>
+            <p class='videos__class'>Demo</p>
+            <p class='videos__title'>Music In Places There Isn't Usually Music</p>
+            <p class='videos__about'>thing</p>
+          </div>
+          <div class='videos__item--right'>
+            <img class='videos__thumbnail' data-url='' src='dist/img/video1.png'>
+          </div>
+        </li>
+        <li class='videos__item'>
+          <div class='videos__item--left'>
+            <p class='videos__class'>Demo</p>
+            <p class='videos__title'>Music In Places There Isn't Usually Music</p>
+            <p class='videos__about'>thing</p>
+          </div>
+          <div class='videos__item--right'>
+            <img class='videos__thumbnail' data-url='' src='dist/img/video1.png'>
+          </div>
+        </li>
+        <li class='videos__item'>
+          <div class='videos__item--left'>
+            <p class='videos__class'>Demo</p>
+            <p class='videos__title'>Music In Places There Isn't Usually Music</p>
+            <p class='videos__about'>thing</p>
+          </div>
+          <div class='videos__item--right'>
+            <img class='videos__thumbnail' data-url='' src='dist/img/video1.png'>
+          </div>
+        </li>
+      </ul>
+    </div>
   </main>
   <footer class='footer'>
     <div class='footer--left'>
@@ -28,10 +90,16 @@
       </div>
     </div>
     <div class='footer--right'>
-      <h2>About Me</h2>
-      <p>"Nirvana is the reason I ever picked up a guitar" stands as cliché as itself, but it does not fail to be true in Pete's case. While Nirvana planted the seed, being raised not a musician but by a music lover watered the soil.</p>
-      <p>Exposure to Eno and Bowie and Byrne and Elvis and Bernstein and Bach fostered much curiosity for sounds and craigslist ads often provided the things that made those sounds. Whether it is the $20 organ from Craiglist where he learned to play keyboards or the Hammond in Columbia Studios it has always been about learning more about music for Pete Jonas.</p>
-      <p>As a professional Pete has worked as Music Director and Organist at churches, worked as a session guitarist and keyboardist on countless studio and live projects, written and recorded his own music, and assisted as an audio engineer.</p>
+      <div class='footer--right--center'>
+        <h2>About</h2>
+        <p>I wasn't bred to be a musician, it just happened upon me. In a home full of music lovers whose vinyl record collection was too large to catalogue, the turntable was my first place to discover a love for music. My sister had a dusty electric guitar in her bedroom. That guitar slowly made its way to his bedroom. One guitar became several. Little vintage toy keyboards came into the bedroom, these became an organ, a piano, and an accordion. Since, I have expanded from playing the guitar and the keyboards to composing, film scoring, producing, and songwriting.</p>
+        <p>Music has been the backbone my life, connecting to the people who make it and the avid listeners alike, he has been able to make what I consider the most interesting and amazing web of friendships.</p>
+        <ul class='footer__social--list'>
+          <li class='footer__social--link'>Instagram</li>
+          <li class='footer__social--link'>Youtube</li>
+          <li class='footer__social--link'>Soundcloud</li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>

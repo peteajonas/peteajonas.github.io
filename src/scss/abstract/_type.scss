@@ -4,10 +4,22 @@
     font-weight: 900;
 }
 
+@font-face {
+    font-family: 'grotesk';
+    src: url('../../dist/type/HKGrotesk-Light.woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'grotesk';
+    src: url('../../dist/type/HKGrotesk-Medium.woff2');
+    font-weight: 500;
+}
+
 h1 {
   font-family: 'grotesk';
   font-weight: 900;
-  font-size: 50px;
+  font-size: 65px;
   color: $white;
 }
 
@@ -16,4 +28,20 @@ h2 {
   font-weight: 900;
   font-size: 50px;
   color: $black;
+}
+
+h4 {
+  font-family: 'grotesk';
+  font-weight: 500;
+  font-size: 24px;
+  color: $dark-grey;
+}
+
+p {
+  font-family: 'grotesk';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  margin: 20px 0;
 }
