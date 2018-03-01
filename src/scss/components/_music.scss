@@ -3,11 +3,20 @@
   &__list {
     margin: 50px 0 0;
     display: flex;
+
+    @include sm {
+      display: block;
+    }
+
   }
 
   &__card {
     width: 33%;
     display: block;
+
+    @include sm {
+      width: 100%;
+    }
 
     img {
       width: 70%;

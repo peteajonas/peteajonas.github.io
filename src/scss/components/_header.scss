@@ -1,10 +1,22 @@
 .header {
 
+  &__image:nth-child(1) {
+    @include sm {
+      display: none;
+    }
+  }
+
   &__image {
     max-width: 50%;
     width: 50%;
     height: 600px;
     position: relative;
+
+    @include sm {
+      max-width: 100%;
+      width: 100%;
+    }
+
     &> div:nth-child(1) {
       opacity: 1;
       transition: .15s opacity;
@@ -64,6 +76,10 @@
       max-width: 90%;
       margin: 40px auto;
 
+      @include sm {
+        text-align: center;
+      }
+
       ul {
         display: flex;
         margin: 20px 0;
@@ -74,9 +90,13 @@
           font-weight: 300;
           margin: 0 10px;
           font-size: 22px;
+
+          @include sm {
+            margin: 0 auto;
+          }
+
         }
       }
     }
   }
 }
-
