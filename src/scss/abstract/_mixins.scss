@@ -1,0 +1,29 @@
+@mixin xs {
+  @media screen and (max-width: $xs) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin lr {
+  @media screen and (max-width: $lr) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (max-width: $xl) {
+    @content;
+  }
+}
