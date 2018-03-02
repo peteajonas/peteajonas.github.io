@@ -71,4 +71,12 @@
     }
 
   }
+
+  &__social--list {
+    display: flex;
+    max-width: 60%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
 }
