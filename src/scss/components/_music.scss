@@ -13,6 +13,7 @@
   &__card {
     width: 33%;
     display: block;
+    cursor: pointer;
 
     @include sm {
       width: 100%;
